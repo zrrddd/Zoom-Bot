@@ -37,6 +37,7 @@ while not have_start_meeting:
 
 			sign_in(m_id)
 			time.sleep(30)
+			print("Joined the meeting")
 			have_start_meeting = True
 
 
@@ -48,6 +49,7 @@ while have_start_meeting and not have_end_meeting:
 		pyautogui.hotkey('command', 'w', interval=0.25)
 		time.sleep(1)
 		pyautogui.press('enter')
+		print("Quit the meeting")
 		have_end_meeting = True
 
 # Quit Zoom
